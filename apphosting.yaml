@@ -1,0 +1,23 @@
+# Sample apphosting.yaml
+
+# Environment variables and secrets.
+env:
+  # This environment variable is valid.
+  - variable: MESSAGE
+    value: Hello world!
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # If there is no secret called nonExistentRef, this will fail the build.
+  - variable: MISSING_SECRET
+    secret: nonExistentRef
+
+  # If there is a secret called mySecret, but permissions haven't been
+  # configured, this will fail the build.
+  - variable: UNPERMISSIONED_SECRET
+    secret: mySecret
+
+  # This secret is improperly formatted, so it will fail a build.
+  - variable: IMPROPER_SECRET
+    secret: this will fail builds
