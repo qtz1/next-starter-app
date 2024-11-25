@@ -15,9 +15,9 @@ env:
 
   # If there is a secret called mySecret, but permissions haven't been
   # configured, this will fail the build.
-  - variable: UNPERMISSIONED_SECRET
-    secret: mySecret
+  # - variable: UNPERMISSIONED_SECRET
+  #   secret: mySecret
 
   # This secret is improperly formatted, so it will fail a build.
-  # - variable: IMPROPER_SECRET
-  #   secret: this will fail builds
+  - variable: IMPROPER_SECRET
+    secret: this will fail builds.
