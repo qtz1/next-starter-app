@@ -19,5 +19,5 @@ env:
     secret: mySecret
 
   # This secret is improperly formatted, so it will fail a build.
-  - variable: IMPROPER_SECRET
-    secret: this will fail builds
+  # - variable: IMPROPER_SECRET
+  #   secret: this will fail builds
