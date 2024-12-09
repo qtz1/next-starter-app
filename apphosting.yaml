@@ -1,7 +1,6 @@
 # Sample apphosting.yaml
 
 # Environment variables and secrets.
-ijfiajijadjf
 env:
   # This environment variable is valid.
   - variable: MESSAGE
