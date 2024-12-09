@@ -10,8 +10,8 @@ env:
       - RUNTIME
 
   # If there is no secret called nonExistentRef, this will fail the build.
-  # - variable: MISSING_SECRET
-  #   secret: nonExistentRef
+  - variable: MISSING_SECRET
+    secret: nonExistentRef
 
   # If there is a secret called mySecret, but permissions haven't been
   # configured, this will fail the build.
