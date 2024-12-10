@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
+    asdf
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
