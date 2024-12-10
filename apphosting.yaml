@@ -9,7 +9,6 @@ env:
       - BUILD
       - RUNTIME
 
-  # If there is no secret called nonExistentRef, this will fail the build.
   - variable: MISSING_SECRET
     secret: nonExistentRef
 
