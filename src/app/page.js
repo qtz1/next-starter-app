@@ -15,7 +15,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            Suh. Get started by editing <code>src/app/page.js</code>.
+            MESSAGE: {process.env.MESSAGE} Get started by editing <code>src/app/page.js</code>.
           </li>
           <li>Save and see your changes instantly. Like this</li>
         </ol>
